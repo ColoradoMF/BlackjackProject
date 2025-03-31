@@ -4,7 +4,7 @@ public enum Suit {
 	
 	HEARTS("Hearts"), 
 	DIAMONDS("Diamonds"), 
-	SPADES("Speades"), 
+	SPADES("Spades"), 
 	CLUBS("Clubs");
 	
 	private final String name;

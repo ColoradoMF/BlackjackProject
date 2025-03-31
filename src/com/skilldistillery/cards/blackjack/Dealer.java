@@ -1,5 +1,7 @@
 package com.skilldistillery.cards.blackjack;
 
+import java.util.Collections;
+
 import com.skilldistillery.cards.common.Card;
 import com.skilldistillery.cards.common.Deck;
 
@@ -13,6 +15,8 @@ public class Dealer extends Player {
 	public Dealer() {
 		super();
 		deck = new Deck();
+		deck.shuffle();
+		// dealer shuffles the deck (method call is in Dealer class) 
 	}
 	
 	// take a card out of the deck and return it from the deck

@@ -28,6 +28,7 @@ public class Deck {
 				Card card = new Card(rank, suit);
 				cards.add(card);
 			}
+			
 		}
 		
 		// like in Hoppper Class's drawBall method

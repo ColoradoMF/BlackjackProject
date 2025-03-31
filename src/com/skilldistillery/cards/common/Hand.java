@@ -23,7 +23,7 @@ public abstract class Hand {
 	}
 	
 	public abstract int getHandValue();
-
+	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -31,7 +31,4 @@ public abstract class Hand {
 		return builder.toString();
 	}
 	
-	
-	
-
 }
