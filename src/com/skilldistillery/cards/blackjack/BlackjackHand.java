@@ -1,4 +1,3 @@
-	// what other things do I need in my Blackjack hand
 	// print each card in a list
 	// before start looping, skip the first one
 	// one card to player tell 
@@ -12,16 +11,11 @@
 
 package com.skilldistillery.cards.blackjack;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.skilldistillery.cards.common.Card;
 import com.skilldistillery.cards.common.Hand;
 
 public class BlackjackHand extends Hand {
 	// NO FIELDS in this class, they're in the super class so visible to this class
-	
-	List<Card> cards = new ArrayList<>();
 	
 	public BlackjackHand() {
 	}
@@ -30,7 +24,7 @@ public class BlackjackHand extends Hand {
 	public int getHandValue() {
 		int value = 0;
 		for (Card card : cardsInHand) {
-			value = value + getHandValue();
+			value = value + card.getCardValue();
 		}
 		return value;
 	}
@@ -57,6 +51,4 @@ public class BlackjackHand extends Hand {
 		return output;
 	}
 
-
-	
 }
